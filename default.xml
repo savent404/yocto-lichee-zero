@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/Xilinx" name="xilinx"/>
+  <remote fetch="https://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="https://git.openembedded.org" name="oe"/>
+  <remote fetch="https://github.com" name="gh" />
+
+  <default sync-j="4"/>
+
+  <project name="poky" path="poky" remote="yocto" revision="kirkstone"/>
+  <project name="meta-openembedded" path="poky/meta-openembedded" remote="oe" revision="kirkstone"/>
+  <project name="voloviq/meta-licheepizero" path="poky/meta-licheepizero" remote="gh" revision="kirkstone"/>
+  <project name="meta-qt5/meta-qt5" path="poky/meta-qt5" remote="gh" revision="kirkstone"/>
+</manifest>
